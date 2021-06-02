@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1043706041839",
+    "project_id": "miammiam-1719e",
+    "storage_bucket": "miammiam-1719e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043706041839:android:1f7bf46349b5d468bd521a",
+        "android_client_info": {
+          "package_name": "com.imene.miamiam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043706041839-9k0smco48215ttdhq1mlfu4bibokfhu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwyegQuLQ9Z4SaQb2rYOmXSVKiVXpepXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043706041839-9k0smco48215ttdhq1mlfu4bibokfhu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
