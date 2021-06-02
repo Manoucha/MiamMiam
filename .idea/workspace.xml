@@ -28,7 +28,11 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1tNvrq2TgIXVPuE29oisgKQ9aUl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="memory.settings.postsync.last.time.stamp" value="1622622566107" />
@@ -133,6 +138,10 @@
       <screen x="0" y="25" width="1440" height="816" />
     </state>
     <state x="458" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.816@0.25.1440.816" timestamp="1622625799972" />
+    <state x="339" y="63" key="CommitChangelistDialog2" timestamp="1622629271117">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="339" y="63" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1622629271117" />
     <state width="1398" height="223" key="GridCell.Tab.0.bottom" timestamp="1622629050954">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
