@@ -9,7 +9,11 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ad64a17-c290-458c-abdf-db3d4a6e8549" name="Default Changelist" comment="" />
+    <list default="true" id="0ad64a17-c290-458c-abdf-db3d4a6e8549" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1622622566107" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1622974084847" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -142,21 +146,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="339" y="63" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1622629271117" />
-    <state width="1398" height="223" key="GridCell.Tab.0.bottom" timestamp="1622629050954">
+    <state width="1398" height="92" key="GridCell.Tab.0.bottom" timestamp="1622817026047">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1622629050954" />
-    <state width="1398" height="223" key="GridCell.Tab.0.center" timestamp="1622629050950">
+    <state width="1398" height="92" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1622817026047" />
+    <state width="1398" height="92" key="GridCell.Tab.0.center" timestamp="1622817026039">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1622629050950" />
-    <state width="1398" height="223" key="GridCell.Tab.0.left" timestamp="1622629050949">
+    <state width="1398" height="92" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1622817026039" />
+    <state width="1398" height="92" key="GridCell.Tab.0.left" timestamp="1622817026038">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1622629050949" />
-    <state width="1398" height="223" key="GridCell.Tab.0.right" timestamp="1622629050951">
+    <state width="1398" height="92" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1622817026037" />
+    <state width="1398" height="92" key="GridCell.Tab.0.right" timestamp="1622817026040">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="223" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1622629050951" />
+    <state width="1398" height="92" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1622817026040" />
+    <state x="390" y="279" key="com.intellij.ide.util.TipDialog" timestamp="1622974081934">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="390" y="279" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1622974081934" />
   </component>
 </project>
