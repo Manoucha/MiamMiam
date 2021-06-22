@@ -34,13 +34,18 @@ import com.android.volley.toolbox.Volley;
 import com.google.firebase.auth.FirebaseAuth;
 import com.imene.miamiam.Adapters.RecetteRecycAdapter;
 import com.imene.miamiam.Models.Recette;
+import com.imene.miamiam.SpoonacularApi.SpoonacularService;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import okhttp3.Call;
+import okhttp3.Callback;
 
 
 public class HomeFragment extends Fragment {
@@ -99,7 +104,7 @@ public class HomeFragment extends Fragment {
 
     private void finRecette(String search) {
         listchercherRecette = new ArrayList<Recette>();
-        String URL="https://api.spoonacular.com/recipes/search?query=" + search + "&number=30&instructionsRequired=true&apiKey=b93a882d6d514ea9b42b9b28b5236005";
+       String URL="https://api.spoonacular.com/recipes/search?query=" + search + "&number=30&instructionsRequired=true&apiKey=b93a882d6d514ea9b42b9b28b5236005";
         RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,
@@ -141,10 +146,48 @@ public class HomeFragment extends Fragment {
                 }
         );
         requestQueue.add(jsonObjectRequest);
+
+        /*SpoonacularService service = new SpoonacularService();
+        service.searchRecette(search, new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Call call, okhttp3.Response response) throws IOException {
+
+                testArr = (JSONArray) response.body().get("results");
+                Log.i("the search res is:", String.valueOf(testArr));
+                for (int i = 0; i < testArr.length(); i++) {
+                    JSONObject jsonObject1 = null;
+                    try {
+                        jsonObject1 = testArr.getJSONObject(i);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    listchercherRecette.add(new Recette(jsonObject1.optString("id"),jsonObject1.optString("title"), "https://spoonacular.com/recipeImages/" + jsonObject1.optString("image"), Integer.parseInt(jsonObject1.optString("servings")), Integer.parseInt(jsonObject1.optString("readyInMinutes"))));
+                }
+                progressBar.setVisibility(View.GONE);
+                if(listchercherRecette.isEmpty()){
+                    recyclerView.setAlpha(0);
+                    noresultTV.setVisibility(View.VISIBLE);
+                }
+                else{
+                    noresultTV.setVisibility(View.GONE);
+                    RecetteRecycAdapter myAdapter = new RecetteRecycAdapter(getContext(), listchercherRecette);
+                    recyclerView.setAdapter(myAdapter);
+                    recyclerView.setItemAnimator(new DefaultItemAnimator());
+                    recyclerView.setAlpha(1);
+
+            }}
+        });*/
+
+
     }
 
     private void getRandomRecipes() {
-        String URL = " https://api.spoonacular.com/recipes/random?number=30&instructionsRequired=true&apiKey=b93a882d6d514ea9b42b9b28b5236005";
+        String URL = "https://api.spoonacular.com/recipes/random?number=30&instructionsRequired=true&apiKey=b93a882d6d514ea9b42b9b28b5236005";
         RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                 Request.Method.GET,

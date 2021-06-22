@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="General">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/notification"
+                    android:title="CONTACT US" />
+                <item
+                    android:id="@+id/loout"
+                    android:title="Term of use" />
+                <item
+                    android:id="@+id/logout"
+                    android:title="LOG OUT" />
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>
