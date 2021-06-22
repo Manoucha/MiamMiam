@@ -52,17 +52,16 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String email = emailET.getText().toString();
                 String password = passwordET.getText().toString();
-                String username = pseudoET.getText().toString();
-                String confirmpass = confirmPassET.getText().toString();
+
                 try{
                     if(email.isEmpty() || password.isEmpty()){
-                        throw new Exception("All fields must be filled");
+                        throw new Exception("Champs vides! ");
                     }
                     if(password.length()<6){
-                        throw new Exception("Password length should be more than 6 characters");
+                        throw new Exception("Mot de passe doit contenir plus que 6 caractères");
                     }
                     if (!(Patterns.EMAIL_ADDRESS.matcher(email).matches())){
-                        throw new Exception("Invalid Email");
+                        throw new Exception("Mail non valide");
                     }
                     registerUser(email,password);
                     registerbtn.doneLoadingAnimation(Color.parseColor("#5856EC"), BitmapFactory.decodeResource(getResources(),R.drawable.ic_done_white_48dp));
@@ -83,7 +82,7 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Intent mainIntent= new Intent(RegisterActivity.this, MainActivity.class);
+                            Intent mainIntent= new Intent(RegisterActivity.this, LoginActivity.class);
                             mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(mainIntent);
                             finish(); // The user can't come back to this page

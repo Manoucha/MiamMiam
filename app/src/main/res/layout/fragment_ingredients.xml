@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Ce qu'il y a dans mon frigo ?"
+        android:textColor="#527C78"
+        android:textSize="18dp" />
+    <Button
+        android:id="@+id/ingredients_search"
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/buttonbg"
+        android:text="CHERCHER DES RECETTES"
+        android:textColor="#FFFFFF" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview_ingredients"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
